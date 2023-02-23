@@ -229,7 +229,7 @@ class ScoreController extends Controller
         try {
             $rec = RequestEditScore::findOrFail($id);
             $rec->delete();
-            return redirect()->back()->withSuccess("Deleted");
+            return redirect()->back()->withSuccess("Delete");
         } catch (\Exception $e) {
             return redirect()->back()->withError($e->getMessage());
         }
