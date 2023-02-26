@@ -232,6 +232,7 @@ class ScoreController extends Controller
             return redirect()->back()->withSuccess("Deleted");
         } catch (\Exception $e) {
             return redirect()->back()->withError($e->getMessage());
+            
         }
     }
 }
