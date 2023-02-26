@@ -81,6 +81,7 @@
                             <a class="nav-link text-white" href="{{route('teachers')}}">
                                 <span class="nav-link-text ms-1">
                                     List of teachers
+                                    
                                 </span>
                             </a>
                         </li>
