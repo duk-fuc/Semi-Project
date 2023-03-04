@@ -190,9 +190,10 @@ class ClassroomController extends Controller
             if($rec->students->count() > 0)
                 throw new \Exception('You must remove all students from the class before deleting the class');
             $rec->delete();
-            return redirect()->back()->withSuccess("Đã xóa");
+            return redirect()->back()->withSuccess("Đã Xóa");
         } catch (\Exception $e) {
             return redirect()->back()->withError($e->getMessage());
+//+++//
         }
     }
 }

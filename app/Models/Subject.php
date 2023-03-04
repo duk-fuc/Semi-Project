@@ -24,10 +24,10 @@ class Subject extends Model
         return $this->hasMany(TeacherSubject::class, 'subject_id');
     }
 
-+++=
+//++=
 
     
     public $table = "subjects";
 }
-++++
-+++
+//++++
+//+++

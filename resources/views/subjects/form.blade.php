@@ -21,7 +21,7 @@
 
     <label class="form-label mt-3">Teacher</label>
     <div class="overflow-auto" style="max-height: 50vh;">
-    +++++///   
+   
     @foreach($teachers as $row)
         @php
         $check = false;
@@ -32,7 +32,8 @@
                     unset($teacher_subject_list[$index]);
                     break;
                 }
-            }+++++
+            }
+            //+++++//
         @endphp
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="teacher_id[]"
@@ -41,7 +42,7 @@
         </div>
         @endforeach
     </div>
-//+//
+
     <input type="submit" class="btn bg-gradient-primary my-4 mb-2" value="{{ isset($rec) ? 'Update' : 'Add'}}">
 </form>
 @stop
