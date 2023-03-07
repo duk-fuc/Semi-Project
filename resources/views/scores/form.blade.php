@@ -19,6 +19,7 @@
             </div>
             <div class="col-md-6">
                 <label class="form-label mt-3">Final grade</label>
+                
                 <div class="input-group input-group-outline">
                     <input type="number" step="0.01" name="tk" class="form-control" value="{{$rec->tk ?? old('tk') ?? ''}}">
                 </div>
