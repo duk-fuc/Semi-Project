@@ -84,7 +84,7 @@ class ClassroomController extends Controller
         foreach ($arr1 as $key =>  $ids11) {
             if (!in_array($key, array_keys($arr))) {
                 $arr += [$key => 0];
-            }
+            }//+++++??////
         }
 
         $rows = [];
