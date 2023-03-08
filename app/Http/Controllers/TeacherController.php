@@ -51,7 +51,7 @@ class TeacherController extends Controller
             $params = $request->all();
             if (strlen($params['password']))
                 $params['password'] = Hash::make($params['password']);
-            else
+            else //++++///
                 unset($params['password']);
             $params['role'] = 'teacher';
             DB::transaction(function () use ($params, $rec) {
