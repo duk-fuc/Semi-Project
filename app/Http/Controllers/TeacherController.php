@@ -37,13 +37,11 @@ class TeacherController extends Controller
             return redirect()->back()->withError($e->getMessage())->withInput();
         }
     }
-
     public function edit($id)
     {
         $data['rec'] = MainModel::findOrFail($id);
         return view('teachers.form')->with($data);
     }
-
     public function update(Request $request, $id)
     {
         try {
@@ -62,7 +60,19 @@ class TeacherController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withError($e->getMessage())->withInput();
         }
+    }//+++///
+    public function delete($id)
+    {
+        try {
+            $rec = MainModel::findOrFail($id);
+            $rec->profile->delete();
+            $rec->delete();
+            return redirect()->back()->withSuccess("Deleted");
+        } catch (\Exception $e) {
+            return redirect()->back()->withError($e->getMessage());
+        }
     }
+
 
     public function find(Request $request)
     {
@@ -76,17 +86,5 @@ class TeacherController extends Controller
      
         return view('teachers.find', $data);
 
-    }
-
-    public function delete($id)
-    {
-        try {
-            $rec = MainModel::findOrFail($id);
-            $rec->profile->delete();
-            $rec->delete();
-            return redirect()->back()->withSuccess("Deleted");
-        } catch (\Exception $e) {
-            return redirect()->back()->withError($e->getMessage());
-        }
     }
 }
