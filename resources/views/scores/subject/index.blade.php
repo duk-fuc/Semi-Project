@@ -22,7 +22,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    ++++//view all student//
+                    ++++//view students//
                     @forelse($rows as $row)
                     <tr>
                         <td class="text-xs">{{$row->student->user->name}}</td>
