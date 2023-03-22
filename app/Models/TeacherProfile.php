@@ -19,6 +19,6 @@ class TeacherProfile extends Model
     public function user() {
         return $this->hasOne(User::class, 'profile_id');
     }
-
+//___///
     public $table = "teacher_profiles";
 }
