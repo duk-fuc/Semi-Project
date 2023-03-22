@@ -30,7 +30,7 @@
                             <a class="text-secondary font-weight-bold text-xs"
                                 href="{{route('subjects.edit', ['id' => $row->id])}}">Update</a> | 
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('subjects.delete', ['id' => $row->id])}}">Delete</a>
+                                href="{{route('subjects.delete', ['id' => $row->id])}}">DELETE</a>
                             @endif
                         </td>
                     </tr>
