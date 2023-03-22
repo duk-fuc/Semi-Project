@@ -28,14 +28,14 @@
                         <td class="align-middle">
                             @if(in_array(auth()->user()->role, ['teacher']))
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('subjects.edit', ['id' => $row->id])}}">Edit</a> | 
+                                href="{{route('subjects.edit', ['id' => $row->id])}}">EDIT</a> | 
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('subjects.delete', ['id' => $row->id])}}">Delete</a>
+                                href="{{route('subjects.delete', ['id' => $row->id])}}">DELETE</a>
                             @endif
                         </td>
                     </tr>
                     @empty
-                    <tr><td class="align-middle text-secondary font-weight-bold text-xs">No data !</td></tr>
+                    <tr><td class="align-middle text-secondary font-weight-bold text-xs">NO DATA !</td></tr>
                     @endforelse
                 </tbody>
             </table>
