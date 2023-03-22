@@ -33,9 +33,10 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
     Route::get('/teachers/create', 'TeacherController@add')->name('teachers.add');
     Route::post('/teachers/create', 'TeacherController@create')->name('teachers.create');
     Route::get('/teachers/update/{id}', 'TeacherController@edit')->name('teachers.edit');
-    Route::post('/teachers/update/{id}', 'TeacherController@update')->name('teachers.update');
+    Route::post('/teachers/update/{id}', 'TeacherController@update')->name('teachers.update');//++++///
     Route::get('/teachers/delete/{id}', 'TeacherController@delete')->name('teachers.delete');
     Route::post('teachers/find', 'TeacherController@find')->name('teachers.find');
+    
 //class//
     Route::get('/classes', 'ClassroomController@index')->name('classes');
     Route::get('/classes2', 'ClassroomController@index2')->name('classes2');
