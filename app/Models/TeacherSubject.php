@@ -28,6 +28,6 @@ class TeacherSubject extends Model
     public function subject() {
         return $this->belongsTo(Subject::class, 'subject_id');
     }
-
+//++//
     public $table = "teacher_subject";
 }
