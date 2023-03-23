@@ -14,7 +14,7 @@
         <input type="text" name="code" class="form-control" required value="{{$rec->code ?? old('code') ?? ''}}">
     </div>
 
-    <label class="form-label mt-3">Semester *</label>
+    <label class="form-label mt-3">SEMESTER *</label>
     <div class="input-group input-group-outline">
         <input type="number" name="semester" class="form-control" required value="{{$rec->semester ?? old('semester') ?? ''}}">
     </div>
@@ -40,7 +40,7 @@
         </div>
         @endforeach
     </div>
-
+//+/////
     <input type="submit" class="btn bg-gradient-primary my-4 mb-2" value="{{ isset($rec) ? 'Update' : 'Add'}}">
 </form>
 @stop
