@@ -22,6 +22,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    //view all student//
                     @forelse($rows as $row)
                     <tr>
                         <td class="text-xs">{{$row->student->user->name}}</td>
@@ -39,7 +40,8 @@
                         </td>
                     </tr>
                     @empty
-                    <tr><td class="align-middle text-secondary font-weight-bold text-xs">No data !</td></tr>
+                    //rong//
+                    <tr><td class="align-middle text-secondary font-weight-bold text-xs">NO DATA !</td></tr>
                     @endforelse
                 </tbody>
             </table>
