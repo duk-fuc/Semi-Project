@@ -35,7 +35,7 @@
                         </td>
                     </tr>
                     @empty
-                    <tr><td class="align-middle text-secondary font-weight-bold text-xs">No data !</td></tr>
+                    <tr><td class="align-middle text-secondary font-weight-bold text-xs">NO DATA !</td></tr>
                     @endforelse
                 </tbody>
             </table>
