@@ -20,7 +20,7 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
         else return redirect()->route('scores.student', ['id' => auth()->user()->profile->id]);
     })->name('index');
 
-    //student//
+    //Student//
     Route::get('/students', 'StudentController@index')->name('students');
     Route::get('/students/create', 'StudentController@add')->name('students.add');
     Route::post('/students/create', 'StudentController@create')->name('students.create');
@@ -28,7 +28,7 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
     Route::post('/students/update/{id}', 'StudentController@update')->name('students.update');
     Route::get('/students/delete/{id}', 'StudentController@delete')->name('students.delete');
     Route::post('students/find', 'StudentController@find')->name('student.find');
-//teacher//
+//Teacher//
     Route::get('/teachers', 'TeacherController@index')->name('teachers');
     Route::get('/teachers/create', 'TeacherController@add')->name('teachers.add');
     Route::post('/teachers/create', 'TeacherController@create')->name('teachers.create');
@@ -36,7 +36,7 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
     Route::post('/teachers/update/{id}', 'TeacherController@update')->name('teachers.update');
     Route::get('/teachers/delete/{id}', 'TeacherController@delete')->name('teachers.delete');
     Route::post('teachers/find', 'TeacherController@find')->name('teachers.find');
-//class//
+//Class//
     Route::get('/classes', 'ClassroomController@index')->name('classes');
     Route::get('/classes2', 'ClassroomController@index2')->name('classes2');
     Route::get('/classes/create', 'ClassroomController@add')->name('classes.add');
@@ -48,7 +48,7 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
     Route::post('classes/find', 'ClassroomController@find')->name('classes.find');
     Route::post('classes/findstudent', 'ClassroomController@findstudentbyclass')->name('classes.findstudent');
     
-//subject//
+//Subject//
     Route::get('/subjects', 'SubjectController@index')->name('subjects');
     Route::get('/subjects/create', 'SubjectController@add')->name('subjects.add');
     Route::post('/subjects/create', 'SubjectController@create')->name('subjects.create');
@@ -78,7 +78,7 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
     Route::post('scores/findbyclass', 'ScoreController@findbyclass')->name('Score.findbyclass');
     Route::post('scores/findbystudent', 'ScoreController@findbystudent')->name('Score.findbystu');
     Route::post('scores/findbyrequest', 'ScoreController@findbyrequest')->name('Score.findbyreq');
-//login//
+//logout//
     Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //+///
@@ -88,7 +88,7 @@ Route::middleware('guest')->namespace('App\Http\Controllers')->group(function ()
     Route::get('/login', function () {
         return view('login');
     })->name('login');
-+++
++++++
     Route::post('/login', 'LoginController@authenticate')->name('login.post');
 });
 
