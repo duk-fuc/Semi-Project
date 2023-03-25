@@ -41,7 +41,7 @@
         </div>
         @endforeach
     </div>
-//+/////
+//+//
     <input type="submit" class="btn bg-gradient-primary my-4 mb-2" value="{{ isset($rec) ? 'Update' : 'Add'}}">
 </form>
 @stop
