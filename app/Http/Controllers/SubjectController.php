@@ -1,5 +1,5 @@
 <?php
-
+//Head//
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -9,9 +9,10 @@ use Illuminate\Support\Facades\DB;
 use App\Models\TeacherProfile;
 use App\Models\TeacherSubject;
 use App\Models\User;
-
+//Body//
 class SubjectController extends Controller
 {
+    //++++//
     public function index()
     {
         $data['rows'] = MainModel::all();
@@ -88,3 +89,5 @@ class SubjectController extends Controller
         }
     }
 }
+
+//End//
