@@ -28,7 +28,7 @@
                         <td class="align-middle">
                             @if(in_array(auth()->user()->role, ['teacher']))
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('subjects.edit', ['id' => $row->id])}}">Update</a> | 
+                                href="{{route('subjects.edit', ['id' => $row->id])}}">UPDATE</a> | 
                             <a class="text-secondary font-weight-bold text-xs"
                                 href="{{route('subjects.delete', ['id' => $row->id])}}">DELETE</a>
                             @endif
