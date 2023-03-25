@@ -21,7 +21,8 @@
 
     <label class="form-label mt-3">Teacher</label>
     <div class="overflow-auto" style="max-height: 50vh;">
-        @foreach($teachers as $row)
+    +++++///   
+    @foreach($teachers as $row)
         @php
         $check = false;
         if(isset($teacher_subject_list))
@@ -31,7 +32,7 @@
                     unset($teacher_subject_list[$index]);
                     break;
                 }
-            }
+            }+++++
         @endphp
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="teacher_id[]"
