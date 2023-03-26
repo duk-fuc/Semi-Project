@@ -15,7 +15,7 @@ class Handler extends ExceptionHandler
     protected $dontReport = [
         //
     ];
-
+//Update//
     /**
      * A list of the inputs that are never flashed for validation exceptions.
      *
