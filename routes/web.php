@@ -49,6 +49,7 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
     Route::post('classes/findstudent', 'ClassroomController@findstudentbyclass')->name('classes.findstudent');
     
 //Subject//
+//+++//
     Route::get('/subjects', 'SubjectController@index')->name('subjects');
     Route::get('/subjects/create', 'SubjectController@add')->name('subjects.add');
     Route::post('/subjects/create', 'SubjectController@create')->name('subjects.create');
@@ -56,6 +57,7 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
     Route::post('/subjects/update/{id}', 'SubjectController@update')->name('subjects.update');
     Route::get('/subjects/delete/{id}', 'SubjectController@delete')->name('subjects.delete');
     Route::post('subjects/find', 'SubjectController@find')->name('subjects.find');
+//+++//
 //scores//
     Route::get('/scores/create', 'ScoreController@add')->name('scores.add');
     Route::post('/scores/create', 'ScoreController@create')->name('scores.create');
