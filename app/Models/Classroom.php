@@ -23,4 +23,5 @@ class Classroom extends Model
     }
 
     public $table = "classes";
+    
 }

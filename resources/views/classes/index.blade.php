@@ -33,7 +33,7 @@
                                 href="{{route('classes.delete', ['id' => $row['id']])}}"><button type="submit" onclick="return confirm('Are you sure you want to delete ?')">Delete Class</button></a>
                         </td>
                     </tr>
-                    @empty
+                    @empty 
                     <tr><td colspan='3' class="align-middle text-secondary font-weight-bold text-xs">No data !</td></tr>
                     @endforelse
                 </tbody>

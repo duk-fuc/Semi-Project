@@ -40,7 +40,7 @@
         </div>
         <div style="text-align: center" >
             <img  width="54px"  src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png" alt="">
-            <h5 style="font-size: 14px ; color :rgb(255, 255, 255)">ADMIN</h5>
+            <h5 style="font-size: 14px ; color :rgb(255, 255, 255)">Student</h5>
         </div>
         @if(auth()->check())
         <hr class="horizontal light mt-0 mb-2">
@@ -121,7 +121,7 @@
                     </ul>
                   </div>
                   <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                    <span class="menu-title">Transcript</span>
+                    <span class="menu-title">Score</span>
                     <i class="menu-arrow"></i>
                     <i class="mdi mdi-crosshairs-gps menu-icon"></i>
                   </a>
@@ -131,7 +131,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="{{route('scores.request_edit')}}">
                         <span class="nav-link-text ms-1">
-                            request correction
+                            Request correction
                         </span>
                     </a>
                 </li>

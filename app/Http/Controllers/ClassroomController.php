@@ -57,53 +57,6 @@ class ClassroomController extends Controller
 
         return view('classes.index', compact('rows'));
     }
-
-    public function index2()
-    {
-        $dataClass = Classroom::all();
-        $ids = [];
-        $ids1 = [];
-        $datas = StudentProfile::all();
-        foreach ($dataClass as $class) {
-            if (empty($data)) {
-                $ids1[] = $class->id;
-            }
-            foreach ($datas ?? [] as $data) {
-                if (!in_array($class->id, $data['class_id'])) {
-                    $ids1[] = $class->id;
-                }
-                foreach ($data['class_id'] as $value) {
-                    $ids[] = $value;
-                }
-            }
-        }
-        
-        $arr = array_count_values($ids);
-        $arr1 = array_count_values($ids1);
-
-        foreach ($arr1 as $key =>  $ids11) {
-            if (!in_array($key, array_keys($arr))) {
-                $arr += [$key => 0];
-            }
-        }
-
-        $rows = [];
-        foreach ($arr as $key => $value1) {
-            $dataClass = Classroom::find($key);
-            $rows[] = [
-                'id' => $key,
-                'count' => $value1/2,
-                'name' => $dataClass['name']
-            ];
-        }
-
-        $keyword = trim(request()->keywords);
-        if ($keyword) {
-            $rows = collect($rows)->where('name', $keyword);
-        }
-
-        return view('classes.index2', compact('rows'));
-    }
     public function find(Request $request)
     {
         $keyword = $request->keywords;
@@ -190,7 +143,7 @@ class ClassroomController extends Controller
             if($rec->students->count() > 0)
                 throw new \Exception('You must remove all students from the class before deleting the class');
             $rec->delete();
-            return redirect()->back()->withSuccess("Đã xóa");
+            return redirect()->back()->withSuccess("Deleted");
         } catch (\Exception $e) {
             return redirect()->back()->withError($e->getMessage());
         }
