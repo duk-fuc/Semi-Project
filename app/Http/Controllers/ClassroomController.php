@@ -29,6 +29,7 @@ class ClassroomController extends Controller
                     $ids[] = $value;
                 }
             }
+
         }
         
         $arr = array_count_values($ids);
