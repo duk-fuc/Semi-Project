@@ -34,9 +34,9 @@
                         <td class="text-xs">{{$row->tk}}</td>
                         <td class="align-middle">
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('scores.edit', ['id' => $row->id])}}">Edit</a> | 
+                                href="{{route('scores.edit', ['id' => $row->id])}}">EDIT</a> | 
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('scores.delete', ['id' => $row->id])}}">Delete</a>
+                                href="{{route('scores.delete', ['id' => $row->id])}}">DELETE</a>
                         </td>
                     </tr>
                     @empty
