@@ -49,7 +49,7 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
     Route::post('classes/findstudent', 'ClassroomController@findstudentbyclass')->name('classes.findstudent');
     
 //Subject//
-//+++//
+
     Route::get('/subjects', 'SubjectController@index')->name('subjects');
     Route::get('/subjects/create', 'SubjectController@add')->name('subjects.add');
     Route::post('/subjects/create', 'SubjectController@create')->name('subjects.create');
