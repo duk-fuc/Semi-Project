@@ -30,7 +30,7 @@
                             <a class="text-secondary font-weight-bold text-xs"
                                 href="{{route('subjects.edit', ['id' => $row->id])}}">UPDATE</a> | 
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('subjects.delete', ['id' => $row->id])}}">DELETE</a>
+                                href="{{route('subjects.delete', ['id' => $row->id])}}"><button type="submit" onclick="return confirm('Are you sure you want to delete this subject?')">Delete Subject</button></a>
                             @endif
                         </td>
                     </tr>
