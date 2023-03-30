@@ -1,10 +1,11 @@
 <?php
-
+//Head//
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-//model of subject
+//model of subject//
+//Body//
 class Subject extends Model
 {
     use HasFactory;
@@ -29,4 +30,5 @@ class Subject extends Model
     
     public $table = "subjects";
 }
+//End//
 //+++//
