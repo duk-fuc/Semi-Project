@@ -20,6 +20,7 @@ Route::middleware('auth')->namespace('App\Http\Controllers')->group(function () 
         else return redirect()->route('scores.student', ['id' => auth()->user()->profile->id]);
     })->name('index');
 
+    
     Route::get('/students', 'StudentController@index')->name('students');
     Route::get('/students/create', 'StudentController@add')->name('students.add');
     Route::post('/students/create', 'StudentController@create')->name('students.create');
