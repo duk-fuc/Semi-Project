@@ -33,4 +33,5 @@ class Score extends Model
     }
 
     public $table = "scores";
+    
 }
