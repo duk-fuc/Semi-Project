@@ -37,6 +37,7 @@
                                 href="{{route('students.delete', ['id' => $row['id']])}}">Delete</a>|
                             <a class="text-secondary font-weight-bold text-xs"
                                     href="{{route('scores.create', ['id' => $row['id']])}}">Add Score</a>
+
                         </td>
                     </tr>
                     @endforeach
