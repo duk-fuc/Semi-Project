@@ -32,5 +32,5 @@ class StudentProfile extends Model
         return $this->hasOne(User::class, 'profile_id');
     }
 
-    public $table = "student_profiles";
+    public $table = "Student_Profiles";
 }
