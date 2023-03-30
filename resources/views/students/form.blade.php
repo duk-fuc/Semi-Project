@@ -16,6 +16,7 @@
     <label class="form-label mt-3">Date of birth *</label>
     <div class="input-group input-group-outline">
         <input type="date" name="dob" class="form-control" required value="{{isset($rec) ? date('Y-m-d', strtotime($rec->profile->dob)) : date('Y-m-d', time()) ?? ''}}">
+        
     </div>
 
     <label class="form-label mt-3">Email *</label>
