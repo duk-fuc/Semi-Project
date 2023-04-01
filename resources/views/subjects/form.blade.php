@@ -14,14 +14,15 @@
         <input type="text" name="code" class="form-control" required value="{{$rec->code ?? old('code') ?? ''}}">
     </div>
 
-    <label class="form-label mt-3">Semester *</label>
+    <label class="form-label mt-3">SEMESTER *</label>
     <div class="input-group input-group-outline">
         <input type="number" name="semester" class="form-control" required value="{{$rec->semester ?? old('semester') ?? ''}}">
     </div>
 
     <label class="form-label mt-3">Teacher</label>
     <div class="overflow-auto" style="max-height: 50vh;">
-        @foreach($teachers as $row)
+    +++++///   
+    @foreach($teachers as $row)
         @php
         $check = false;
         if(isset($teacher_subject_list))
@@ -31,7 +32,7 @@
                     unset($teacher_subject_list[$index]);
                     break;
                 }
-            }
+            }+++++
         @endphp
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="teacher_id[]"
@@ -40,7 +41,7 @@
         </div>
         @endforeach
     </div>
-
+//+//
     <input type="submit" class="btn bg-gradient-primary my-4 mb-2" value="{{ isset($rec) ? 'Update' : 'Add'}}">
 </form>
 @stop
