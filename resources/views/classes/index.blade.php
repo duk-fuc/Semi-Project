@@ -20,6 +20,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    
                     @forelse($rows as $row)
                     <tr>
                         <td class="text-xs">{{$row['name']}}</td>

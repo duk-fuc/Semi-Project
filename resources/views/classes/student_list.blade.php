@@ -21,6 +21,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    
                     @forelse($arr as $row)
                     <tr>
                         <td class="text-xs">{{$row['name']}}</td>
