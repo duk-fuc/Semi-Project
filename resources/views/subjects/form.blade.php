@@ -5,12 +5,12 @@
 <form id="form" class="text-start" method="POST"
     action="{{isset($rec) ? route('subjects.update', ['id' => $rec->id]) : route('subjects.create')}}">
     {{ csrf_field() }}
-    <label class="form-label mt-3">Subject name *</label>
+    <label class="form-label mt-3">SUBJECT NAME *</label>
     <div class="input-group input-group-outline">
         <input type="text" name="name" class="form-control" required value="{{$rec->name ?? old('name') ?? ''}}">
     </div>
 
-    <label class="form-label mt-3">Subject ID *</label>
+    <label class="form-label mt-3">SUBJECT ID *</label>
     <div class="input-group input-group-outline">
         <input type="text" name="code" class="form-control" required value="{{$rec->code ?? old('code') ?? ''}}">
     </div>

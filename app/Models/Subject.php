@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-//model of subject//
+//Model of subject//
 //Body//
 class Subject extends Model
 {
