@@ -34,8 +34,6 @@
                         <td class="text-xs">{{$row['subject_code']}}</td>
                         <td class="text-xs">{{$row['tp1']}}</td>
                         <td class="text-xs">{{$row['tp2']}}</td>
-                        <!-- <td class="text-xs">{{$row['qt']}}</td> -->
-                        <!-- <td class="text-xs">{{$row['ck']}}</td> -->
                         <td class="text-xs">{{$row['tk']}}</td>
                         <td class="align-middle">
                             <a class="text-secondary font-weight-bold text-xs"

@@ -40,7 +40,7 @@
         </div>
         <div style="text-align: center" >
             <img  width="54px"  src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png" alt="">
-            <h5 style="font-size: 14px ; color :rgb(255, 255, 255)">Student</h5>
+            <h5 style="font-size: 14px ; color :rgb(255, 255, 255)"></h5>
         </div>
         @if(auth()->check())
         <hr class="horizontal light mt-0 mb-2">
