@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+//model of subject
 class Subject extends Model
 {
     use HasFactory;
@@ -24,5 +24,10 @@ class Subject extends Model
         return $this->hasMany(TeacherSubject::class, 'subject_id');
     }
 
+//++=
+
+    
     public $table = "subjects";
 }
+//++++
+//+++

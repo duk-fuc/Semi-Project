@@ -30,12 +30,12 @@
                             <a class="text-secondary font-weight-bold text-xs"
                                 href="{{route('subjects.edit', ['id' => $row->id])}}">Update</a> | 
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('subjects.delete', ['id' => $row->id])}}">Delete</a>
+                                href="{{route('subjects.delete', ['id' => $row->id])}}"><button type="submit" onclick="return confirm('Are you sure you want to delete this user account?')">Delete Subject</button></a>
                             @endif
                         </td>
                     </tr>
                     @empty
-                    <tr><td class="align-middle text-secondary font-weight-bold text-xs">No data !</td></tr>
+                    <tr><td class="align-middle text-secondary font-weight-bold text-xs">NO DATA !</td></tr>
                     @endforelse
                 </tbody>
             </table>

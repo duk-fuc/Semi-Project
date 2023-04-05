@@ -34,7 +34,7 @@
                             <a class="text-secondary font-weight-bold text-xs"
                                 href="{{route('students.edit', ['id' => $row['id']])}}">Edit</a> | 
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('students.delete', ['id' => $row['id']])}}">Delete</a>|
+                                href="{{route('students.delete', ['id' => $row['id']])}}"><button type="submit" onclick="return confirm('Are you sure you want to delete this user account?')">Delete Student</button></a>|
                             <a class="text-secondary font-weight-bold text-xs"
                                     href="{{route('scores.create', ['id' => $row['id']])}}">Add Score</a>
 

@@ -30,7 +30,7 @@
                             <a class="text-secondary font-weight-bold text-xs"
                                 href="{{route('classes.edit', ['id' => $row['id']])}}">Edit</a> | 
                             <a class="text-secondary font-weight-bold text-xs"
-                                href="{{route('classes.delete', ['id' => $row['id']])}}">Delete</a>
+                                href="{{route('classes.delete', ['id' => $row['id']])}}"><button type="submit" onclick="return confirm('Are you sure you want to delete ?')">Delete Class</button></a>
                         </td>
                     </tr>
                     @empty

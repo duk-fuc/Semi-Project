@@ -71,7 +71,8 @@ class SubjectController extends Controller
     public function find(Request $request)
     {
         $keyword = $request->keywords;
-        $data['rows'] = MainModel::orwhere('name','like', '%'.$request->keywords.'%')->orwhere('code','like', '%'.$request->keywords.'%')
+        $data['rows'] = MainModel::orwhere('name','like', '%'.$request->keywords.'%')
+        ->orwhere('code','like', '%'.$request->keywords.'%')
         ->get();
         return view('subjects.find', $data);
 
