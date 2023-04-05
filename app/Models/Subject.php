@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 //Model of subject//
+
 //Body//
 class Subject extends Model
 {
@@ -31,4 +32,4 @@ class Subject extends Model
     public $table = "subjects";
 }
 //End//
-//+++//
+
